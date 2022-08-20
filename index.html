@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Form Validation JavaScript </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="header">
+        <h2> Customer details </h2>
+    </div>
+    <form id="form" class="form" action="#" method="post">
+        <div class="form-control">
+            <label for="">First name</label> <span>*</span>
+            <input type="text" placeholder="First Name" id="firstName" onkeyup="lettersOnly(this)" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="">Last name</label> <span>*</span>
+            <input type="text" placeholder="Last Name" id="lastName" onkeyup="lettersOnly(this)" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <label for="plz">Postcode</label> <span>*</span>
+            <input type="text" placeholder="Postcode" id="plz" onkeyup="numbersOnly(this)" />
+
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+
+        <div class="form-control">
+            <label for="">Email</label> <span>*</span>
+            <input type="email" placeholder="armirpajaziti@gmail.com" id="email" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="header2">
+            <h2> Customer details </h2>
+        </div>
+
+
+        <button>Submit</button>
+    </form>
+</div>
+
+<script src="validation.js"></script>
+
